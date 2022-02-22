@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>FoodyPoint-FEEDBACK</title>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/fontawesome.min.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/fontawesome.min.css">
+<style>
+#background{ background-image: url(feedback2.jpg);
+background-position: center;
+height: 600px; 
+background-repeat:no-repeat; 
+background-size: cover;
+}
+body{
+background-color: white;
+}
+#feedback{ background-color: oldlace;
+background-position: center; box-shadow: 0px 0px
+10px 10px rgba(0,0,0,0.5); border-bottom: solid
+4px green;
+position:relative;
+top:100px; left: 510px;
+width: 480px; color:
+white; opacity: 0.9;
+align-content: center;
+align-items: center;
+text-align: center;
+padding-left: 20px;
+}
+#submit{
+background-color: black;
+color:white;
+height: 30px;
+width:100px;
+position: absolute;
+left: 200px
+}
+#submit:hover{
+background-color: green;
+}
+#hf{
+border-width: 0px;
+margin: 0px;
+}
+#emailvalidation,#validationfeedback,#namevalidation{
+color: red;
+}
+#submitform{
+color: green;
+}
+</style>
+<script type="text/javascript">
+function submitFunciton()
+{ var error_name = document.getElementById("namevalidation");
+error_name.innerHTML = "";
+var error_email = document.getElementById("emailvalidation");
+error_email.innerHTML = "";
+var error_feedback=
+document.getElementById("validationfeedback");
+error_feedback.innerHTML=""; var flag=true;
+var a = "";
+var email_regex =/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+var name_regex = /^[A-Za-z]{0,30}$/;
+if (!name_regex.test(document.getElementById("name").value)) {
+error_name.innerHTML += " Name should be letters only and maximum of 30!";
+flag=false;
+return flag;
+}
+if (!email_regex.test(document.getElementById("email").value))
+{ error_email.innerHTML += " Invalid email!";
+flag=false;
+return flag;
+}
+if(a.localeCompare(document.getElementById("userfeedback").value)==0)
+{
+error_feedback.innerHTML += "Feedback is not entered!"; flag=false; return flag;
+}
+return flag;
+}
+</script>
+</head>
+
+<body background-color="black">
+
+<h1 align="center" style=" background-color: green; font-family: Comic Sans MS
+FB; height: 40px; vertical-align: middle;">Feedback</h1>
+<div id="background" width="100%">
+<div id="feedback">
+<br>
+<br>
+<form method="post" name="feedbackform" action="">
+<table id="feedbacktable" border="0" width="100%"
+style="margin:0px;">
+<tr>
+<td style="color:black">Name:</td><td><input
+type="text" name="name" id="name" placeholder="Enter your name" size="45"
+style="font-family: Times New Roman"></td>
+</tr>
+<tr>
+<td></td><td><div
+id="namevalidation"></div></td>
+</tr>
+<tr>
+<td style="color:black">E-mail Id: </td>
+<td><input type="text" name="email" id="email" placeholder="Enter your email
+Id" size="45" style="font-family: Footlight MT Light"></td>
+</tr>
+<tr>
+<td></td><td><div
+id="emailvalidation"></div></td>
+</tr>
+<tr>
+<td style="color:black; vertical-align: top; font-family: Times New Roman;">Feedback:
+</td>
+<td><textarea rows="10" cols="40"
+name="feedback" id="userfeedback"> </textarea><br>
+</td>
+</tr>
+<tr>
+<td></td><td><div
+id="validationfeedback"></div></td>
+</tr>
+<tr>
+<td></td> <td ><input type="button"
+name="submit" value="submit" id="submit"
+onclick="submitFunciton()"><br><br>
+</td>
+</tr>
+<tr>
+<td><div id="submitfeedbackform"></div></td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+<br>
+<br>
+</body>
+</html>

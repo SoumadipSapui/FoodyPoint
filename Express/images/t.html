@@ -1,0 +1,56 @@
+<html>
+<title>20BIT0069</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js">
+</script>
+<style>
+    input.ng-invalid.ng-dirty {
+        border-bottom: 2px solid red;
+    }
+</style>
+
+<body>
+    <form name="form1" ng-app="myApp" ng-controller="validateCtrl" novalidate>
+        <p>Your Name(required)<br><input type="text" name="name" ng-model="name" required> <span style="color:red"
+                ng-show="form1.name.$dirty && form1.name.$invalid"> <span ng-show="form1.name.$error.required">This
+                    field is required</span>
+            </span>
+        </p>
+        <p>Your Email(required)<br><input type="email" name="email" ng-model="email" required> <span style="color:red"
+                ng-show="form1.email.$dirty && form1.email.$invalid"> <span ng-show="form1.email.$error.required">This
+                    field is required</span> <span ng-show="form1.email.$error.email">Please enter a valid email
+                    address</span>
+            </span>
+        </p>
+        <p>Your Phone<br><input type="text" name="phone" ng-model="phone" ng-pattern="/[0-9]{10}/" required> <span
+                style="color:red" ng-show="form1.phone.$dirty && form1.phone.$invalid"> <span
+                    ng-show="form1.phone.$error.required">This field is required</span> <span
+                    ng-show="form1.phone.$error.pattern">Invalid phone</span>
+            </span>
+        </p>
+        <p>Website<br><input type="text" name="webs" ng-model="webs" ng
+                pattern="/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a zA-Z0-9()@:%_\+.~#?&//=]*)/"
+                required> <span style="color:red" ng-show="form1.webs.$dirty && form1.webs.$invalid">
+                <span ng-show="form1.webs.$error.required">This field is required</span> <span
+                    ng-show="form1.webs.$error.pattern">Invalid website</span>
+            </span>
+        </p>
+        <p>Credit Card<br><input type="text" name="creditcard" ng-model="creditcard" ng pattern="/^[0-9]{16}$/"> <span
+                style="color:red" ng-show="form1.creditcard.$dirty &&
+      form1.creditcard.$invalid"> <span ng-show="form1.creditcard.$error.pattern">Invalid creditcard</span>
+            </span>
+        </p>
+        <p>Date Of Birth<br><input type="text" name="dob" ng-model="dob"
+                ng-pattern="/^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d$/"> <span
+                ng-show="form1.dob.$dirty && form1.dob.$invalid"> <span ng-show="form1.dob.$error.pattern">Invalid
+                    dob</span>
+            </span>
+        </p>
+    </form>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('validateCtrl', function ($scope) {
+        });
+    </script>
+</body>
+
+</html>

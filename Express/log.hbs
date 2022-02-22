@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FoodyPoint-LOGIN</title>
+    </head>
+    <body>
+        {{>navbar}}
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-sm-6 col-md-4 mx-auto">
+                    <h1 class="text-center login-title my-5">Login Here</h1>
+                    <div class="account-wall">
+                        <form class="form-login" action="/login" method="post">
+                        <input type="text" class="form-control" placeholder="Username" required name="uname">
+                        <input type="password" class="form-control" placeholder="Password" required name="password">
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+                        <label class="checkbox pull-left mt-3">
+                            Remember me
+                        </label>
+                        
+                        
+                        </form>
+                    </div>
+                    <h2>Don't have an account?</h2>
+                    <a href="signup.html" class="ttext-center new-account">Signup</a> 
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

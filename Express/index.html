@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodyPoint</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="csstyle.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js">
+    </script>
+    <style>
+        input.ng-invalid.ng-dirty {
+            border-bottom: 2px solid red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header section starts      -->
+
+    <header>
+
+        <a href="#" class="logo"></i>Fo🥘dy-Point</a>
+
+        <nav class="navbar">
+            <a class="active" href="#home">home</a>
+            
+            <a href="#dishes">dishes</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#review">review</a>
+            <a href="order.html">order</a>
+            <a href="feedback.html">feedback</a>
+            <a href="login.html">login</a>
+            <a href="table.html">Discount</a>
+            
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+
+    </header>
+
+    <!-- header section ends-->
+
+    <!-- search form  -->
+
+    <form action="" id="search-form">
+        <input type="search" placeholder="search here..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="swiper-container home-slider">
+
+            <div class="swiper-wrapper wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>spicy noodles</h3>
+                        <p>This is one of the special dishes here.</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image1">
+                        <img src="images/qw.jpg"
+                            alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>Cake</h3>
+                        <p>This is one of the special dishes here.</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image1">
+                        <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                            alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>hot pizza</h3>
+                        <p>This is one of the special dishes here.</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/home-img-3.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- speciality section starts-->
+    <section class="speciality" id="speciality">
+
+        <h1 class="heading"> our <span>speciality</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img class="image" src="images/s-img-1.jpg" alt="">
+                <div class="content">
+                    <img src="images/s-1.png" alt="">
+                    <h3>tasty burger</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="images/s-img-2.jpg" alt="">
+                <div class="content">
+                    <img src="images/s-2.png" alt="">
+                    <h3>tasty pizza</h3>
+                    
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="images/s-img-3.jpg" alt="">
+                <div class="content">
+                    <img src="images/s-3.png" alt="">
+                    <h3>cold ice-cream</h3>
+                    
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="images/s-img-4.jpg" alt="">
+                <div class="content">
+                    <img src="images/s-4.png" alt="">
+                    <h3>cold drinks</h3>
+                    
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="images/s-img-5.jpg" alt="">
+                <div class="content">
+                    <img src="images/s-5.png" alt="">
+                    <h3>tasty sweets</h3>
+
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="images/s-img-6.jpg" alt="">
+                <div class="content">
+                    <img src="images/s-6.png" alt="">
+                    <h3>healty breakfast</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- speciality section ends-->
+
+    <!-- dishes section starts  -->
+
+    <section class="dishes" id="dishes">
+
+        <h3 class="sub-heading"> our dishes </h3>
+        <h1 class="heading"> popular dishes </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <p class="first">
+                    <img src="https://media.istockphoto.com/photos/vegetarian-pizza-with-broccoli-cherry-tomato-pepper-and-mushrooms-picture-id1297290376?b=1&k=20&m=1297290376&s=170667a&w=0&h=lwGeM5VzMWRRwJpGwGhLgoMVSDMJL5OuCYhnhCmNthc="
+                        alt="">
+                </p>
+                <h3>PIZZA</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>&#x20B9 449.00</span>
+                <a href="add_to_cart.html" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+
+                <img src="https://media.istockphoto.com/photos/juicy-hamburger-on-white-background-picture-id1206323282?b=1&k=20&m=1206323282&s=170667a&w=0&h=HuuZHlI67OCWiCH5jP94PbrJpj4_26CMJ2NlugqiNIk="
+                    alt="">
+
+                <h3>BURGER</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>&#x20B9 279.00</span>
+                <a href="add_to_cart.html" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+
+                <img src="https://media.istockphoto.com/photos/passion-fruit-birthday-cake-picture-id1247903563?b=1&k=20&m=1247903563&s=170667a&w=0&h=3A3w6QA9y0evPLTSzHSAvCgC2fTr-fO0l7wtvYxNi4Y="
+                    alt="">
+
+                <h3>PASTRY CAKE</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>&#x20B9 199.00</span>
+                <a href="add_to_cart.html" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+
+                <img src="https://media.istockphoto.com/photos/coffee-cup-concept-message-picture-id825340486?b=1&k=20&m=825340486&s=170667a&w=0&h=xHF4mKNDYr_HGCFBlgEAb7P88X-w8DiHyzwyzG4LMT8="
+                    alt="">
+
+                <h3>COFFEE</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>&#x20B9 79.00</span>
+                <a href="add_to_cart.html" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+
+                <img src="https://media.istockphoto.com/photos/south-indian-breakfast-on-banana-leaf-picture-id509568541?b=1&k=20&m=509568541&s=170667a&w=0&h=7M4sHi-0pluSeTg0QPXRdcroKJwZD4-VJcCiNDgqxjs="
+                    alt="">
+
+                <h3>EDLI</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>&#x20B9 149.00</span>
+                <a href="add_to_cart.html" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+
+                <img src="https://media.istockphoto.com/photos/everybodys-favourite-part-of-diwali-picture-id1270677909?b=1&k=20&m=1270677909&s=170667a&w=0&h=q7iRyBJuYpuzJ3g1qdcLCryFMz9MOmNTNqYnNc3JTrI="
+                    alt="">
+
+                <h3>MIX SWEETS</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>&#x20B9 149.00</span>
+                <a href="add_to_cart.html" class="btn">add to cart</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- dishes section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <h3 class="sub-heading"> about us </h3>
+        <h1 class="heading"> why choose us? </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+            </div>
+
+            <div class="content">
+                <h3>best food in the country</h3>
+                <p>FoodyPoint is additionally home to the amazing Table-Side Caesar Spun Signature Salad, specially made tableside from a rundown of 10 fixings including blue cheddar, shrimp, olives, banana peppers, anchovies. And our homemade mystery Caesar dressing. Other housetop choices are our Grilled or Chilled Shrimp, new walleye conveyed every day from Red Lake Nation in Minnesota, and house-ground steak burgers.</p>
+                <p>Our menu offers something for everybody, from the light passage of plates of mixed greens and little nibbles to the inconceivable  T Bone steak. Our steaks are sliced in-house to guarantee flawlessness and expertly barbecued at 2,000 degrees.We will probably give excellent client benefit, the best quality fixings, and a noteworthy affair whether it’s an uncommon occasion, easygoing social event of companions or a sentimental night out on the town.</p>
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>free delivery</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>easy payments</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 service</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">learn more</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- menu section starts  -->
+
+    <section class="menu" id="menu">
+
+        <h3 class="sub-heading"> our menu </h3>
+        <h1 class="heading"> today's speciality </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/menu-1.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>PIZZA🍕</h3>
+                   
+                    <a href="add_to_cart.html" class="btn">add to cart</a>
+                    <span class="price">&#x20B9 349.00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/menu-2.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>BURGER🍔</h3>
+                    
+                    <a href="add_to_cart.html" class="btn">add to cart</a>
+                    <span class="price">&#x20B9 279.00</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/menu-3.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>TASTY NAAN🥟</h3>
+                    
+                    <a href="add_to_cart.html" class="btn">add to cart</a>
+                    <span class="price">&#x20B9 149.00</span>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <!-- menu section ends -->
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+
+        <h3 class="sub-heading"> customer's review </h3>
+        <h1 class="heading"> what they say </h1>
+
+        <div class="swiper-container review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic-1.jpg" alt="">
+                        <div class="user-info">
+                            <h3>Amit kumar</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Food was really awsome overall great experence.</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic-2.jpg" alt="">
+                        <div class="user-info">
+                            <h3>kumar</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Food was really awsome overall great experence.</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic-3.jpeg" alt="">
+                        <div class="user-info">
+                            <h3>raja</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Food was really awsome overall great experence.</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic-4.jpeg" alt="">
+                        <div class="user-info">
+                            <h3>soumadip</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Food was really awsome overall great experence.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- review section ends -->
+
+    
+
+    
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>locations</h3>
+                <a href="#">Banglore</a>
+                <a href="#">Vellore</a>
+                <a href="#">Chenai</a>
+                <a href="#">Mumbai</a>
+                <a href="#">Hydrabad</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#dishes">dishes</a>
+                <a href="#about">about</a>
+                <a href="#menu">menu</a>
+                <a href="#review">reivew</a>
+                <a href="order.html">order</a>
+                <a href="feedback.html">feedback</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+123-456-7890</a>
+                <a href="#">+111-222-3333</a>
+                <a href="#">KumarRaja@gmail.com</a>
+                <a href="#">AmitKumar@gmail.com</a>
+                <a href="#">SoumadipSapui@gmail.com</a>
+                <a href="#">VIT Vellore</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">instagram</a>
+                <a href="#">linkedin</a>
+            </div>
+
+        </div>
+
+        <div class="credit"> copyright @ 2021 by <span>project work</span> </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- loader part  -->
+    <div class="loader-container">
+        <img src="images/loader.gif" alt="">
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="javascrpt.js"></script>
+    
+
+</body>
+
+</html>
